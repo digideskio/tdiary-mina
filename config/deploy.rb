@@ -1,7 +1,7 @@
 require 'mina/git'
 require 'mina/rbenv'
 
-set :domain, "www.hsbt.org"
+set :domain, "133.242.17.37"
 set :user, "hsbt"
 set :deploy_to, "/home/#{user}/app/tdiary"
 set :repository, 'git://github.com/tdiary/tdiary-core.git'

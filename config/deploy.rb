@@ -27,6 +27,7 @@ end
 
 task :restart do
   queue 'sudo /etc/init.d/apache2 graceful'
+  queue 'sudo /etc/init.d/memcached restart'
 end
 
 task :deploy => :environment do

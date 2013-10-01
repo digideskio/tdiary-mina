@@ -26,7 +26,7 @@ task :bundle => :environment do
 end
 
 task :restart do
-  queue 'sudo /etc/init.d/apache2 restart'
+  queue 'sudo /etc/init.d/apache2 graceful'
 end
 
 task :deploy => :environment do

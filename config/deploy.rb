@@ -18,7 +18,7 @@ task :copy_assets => :environment do
 end
 
 task :generate_gemfile_local => :environment do
-  queue "echo \"gem 'tdiary-style-gfm'\" > #{deploy_to}/#{current_path}/Gemfile.local"
+  queue "echo \"gem 'tdiary-style-gfm'; gem 'tdiary-cache-memcached'\" > #{deploy_to}/#{current_path}/Gemfile.local"
 end
 
 task :bundle => :environment do

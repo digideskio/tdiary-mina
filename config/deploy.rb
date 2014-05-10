@@ -23,6 +23,7 @@ end
 
 task :bundle => :environment do
   queue "cd #{deploy_to}/#{current_path}; bundle install --without development:test"
+  queue "cd #{deploy_to}/#{current_path}; chmod 666 Gemfile.lock"
 end
 
 task :restart do

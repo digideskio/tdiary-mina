@@ -22,7 +22,7 @@ task :generate_gemfile_local => :environment do
 end
 
 task :bundle => :environment do
-  queue "cd #{deploy_to}/#{current_path}; bundle install --without development:test"
+  queue "cd #{deploy_to}/#{current_path}; bundle install --without development:test:server"
   queue "cd #{deploy_to}/#{current_path}; chmod 666 Gemfile.lock"
 end
 

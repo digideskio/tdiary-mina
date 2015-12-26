@@ -1,2 +1,3 @@
-tdiary-mina
-===========
+# tdiary-mina
+
+Deployment task for tDiary

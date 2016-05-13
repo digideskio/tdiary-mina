@@ -6,6 +6,7 @@ set :user, "hsbt"
 set :deploy_to, "/home/#{user}/app/tdiary"
 set :repository, 'git://github.com/tdiary/tdiary-core.git'
 set :branch, 'master'
+set :rbenv_path, "/home/#{user}/.anyenv/envs/rbenv"
 
 task :environment do
   invoke :'rbenv:load'
